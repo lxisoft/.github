@@ -14,6 +14,10 @@ This template repository is designed to ensure consistency, high traceability, a
 
 From nurturing a nascent idea to swiftly crafting a prototype, continuously delivering and launching into production, and providing ongoing upgrades, we are dedicated to assisting you every step of the way. Our team comprises internationally certified Java developers who possess the prowess to transform your concepts into fully functional web applications or cross-platform mobile apps for Android, iPhone, iPad, Windows, and more. Additionally, we excel in developing SOA/Microservices-based architectures and Java web portals.
 
+**Our Startups:**
+- [DivisoSofttech](https://www.lxisoft.com/startups/diviso-softtech)
+- [Byta-Tech](https://www.lxisoft.com/startups/byta-tech)
+
 **Our Focus Areas:**
 
 * **Software Development Activities:** We utilize lean, agile methodologies (like the Epic-Feature-Story model) and BDD best practices to deliver robust, scalable, and user-centric software. Our core technology stack is broad and cloud-native, encompassing **Java**, **Python**, and **Flutter** for various development needs. We also leverage **JavaScript/TypeScript** with **Node.js**. Our foundational practices emphasize **AI**, **12 Factor Apps**, **Cloud**, **Container** technologies, **Kubernetes**, and high-throughput **Messaging Middleware** for resilient deployment.
