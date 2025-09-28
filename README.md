@@ -94,3 +94,67 @@ This project uses [standard-version](https://github.com/conventional-changelog/s
 
 
 This automates semantic versioning and changelog management for your project.
+---
+
+### 🔀 Branching & Release Workflow
+
+This repository uses two main branches:
+
+- `main`: Stable production-ready code. Releases are tagged from here.
+- `developer`: Active development. All new features, fixes, and changes are merged here first.
+
+**Recommended workflow:**
+
+1. Work on feature or fix branches, then merge into `developer`.
+2. Regularly merge `developer` into `main` after review and testing.
+3. Run the release process from the `main` branch:
+	 - Ensure all changes from `developer` are merged into `main`.
+	 - Run:
+		 ```
+		 npx standard-version
+		 git push --follow-tags
+		 ```
+	 - This will bump the version, update the changelog, and tag the release.
+4. Optionally, create release branches (e.g., `release/v1.0.0`) for hotfixes or pre-release testing.
+
+**Summary:**
+- All development happens in `developer`.
+- Only stable, reviewed code is merged to `main` and released.
+- Releases are always tagged from `main`.
+
+**Recommended workflow:**
+
+1. Work on feature or fix branches, then merge into `developer`.
+	 - Create a new branch for your work:
+		 ```
+		 git checkout developer
+		 git pull
+		 git checkout -b feature/my-new-feature
+		 ```
+	 - After committing your changes, push and create a pull request to `developer`:
+		 ```
+		 git push origin feature/my-new-feature
+		 ```
+2. Regularly merge `developer` into `main` after review and testing:
+	 - Merge changes from `developer` to `main`:
+		 ```
+		 git checkout main
+		 git pull
+		 git merge developer
+		 git push origin main
+		 ```
+3. Run the release process from the `main` branch:
+	 - Ensure all changes from `developer` are merged into `main`.
+	 - Run:
+		 ```
+		 npx standard-version
+		 git push --follow-tags
+		 ```
+	 - This will bump the version, update the changelog, and tag the release.
+4. Optionally, create release branches (e.g., `release/v1.0.0`) for hotfixes or pre-release testing:
+	 ```
+	 git checkout main
+	 git pull
+	 git checkout -b release/v1.0.0
+	 git push origin release/v1.0.0
+	 ```
