@@ -1,6 +1,6 @@
 {
   "name": "project-standard-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Base package configuration for Lxisoft standardized projects.",
   "scripts": {
     "prepare": "husky install",
