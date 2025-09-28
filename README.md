@@ -73,3 +73,24 @@ All commits must follow the [Conventional Commits](https://www.conventionalcommi
 - Use Commitizen for interactive commit messages:
 
 ```npx cz                                            ```
+
+#### 🚀 Release Process (Semantic Versioning & Changelog)
+
+This project uses [standard-version](https://github.com/conventional-changelog/standard-version) for automated releases:
+
+1. **Commit your changes** using conventional commit messages.
+2. **Run the release command:**
+3. ``` npx standard-version                          ```
+
+
+3. **What happens:**
+- The version in `package.json` is bumped (major, minor, or patch).
+- A `CHANGELOG.md` is generated or updated.
+- A new git commit and tag are created for the release.
+4. **Push your changes and tags:**
+
+
+``` git push --follow-tags                          ```
+
+
+This automates semantic versioning and changelog management for your project.
