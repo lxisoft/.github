@@ -9,6 +9,11 @@ body:
       value: |
         ## Summary
         Briefly describe the business goal and value of this epic.
+    id: summary
+    attributes: 
+       label: Summary
+       description:  Briefly describe the business goal and value of this epic.
+       placeholder: 'State the business goal'
   - type: textarea
     id: goals
     attributes:
