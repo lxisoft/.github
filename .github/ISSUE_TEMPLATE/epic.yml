@@ -1,6 +1,6 @@
 name: 🚀 Epic
 description: Use this template for large initiatives tied directly to business objectives.
-title: 'Epic: '
+title: '[Epic] <title>'
 labels: epic
 assignees: []
 body:
